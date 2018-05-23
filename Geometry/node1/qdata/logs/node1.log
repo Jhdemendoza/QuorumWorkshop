@@ -1,0 +1,962 @@
+I0523 09:16:52.796104 ethdb/database.go:81] Allotted 128MB cache and 1024 file handles to /node1/qdata/geth/chaindata
+I0523 09:16:52.824122 ethdb/database.go:174] closed db:/node1/qdata/geth/chaindata
+I0523 09:16:52.825349 accounts/watch.go:74] now watching /node1/qdata/keystore
+I0523 09:16:52.830088 accounts/addrcache.go:215] reloaded keys, cache has 2 accounts
+I0523 09:16:52.834454 accounts/addrcache.go:215] reloaded keys, cache has 2 accounts
+I0523 09:16:52.840014 accounts/addrcache.go:215] reloaded keys, cache has 2 accounts
+I0523 09:16:52.843733 node/node.go:179] instance: Geth/v1.5.0-unstable-ddb011f3/linux/go1.8
+I0523 09:16:52.844242 ethdb/database.go:81] Allotted 128MB cache and 1024 file handles to /node1/qdata/geth/chaindata
+I0523 09:16:52.886400 eth/db_upgrade.go:346] upgrading db log bloom bins
+I0523 09:16:52.886991 eth/db_upgrade.go:354] upgrade completed in 591.797µs
+I0523 09:16:52.887395 eth/backend.go:177] Protocol Versions: [63 62], Network Id: 1
+I0523 09:16:52.888597 core/blockchain.go:225] Last header: #0 [5510d8b0…] TD=0
+I0523 09:16:52.888838 core/blockchain.go:226] Last block: #0 [5510d8b0…] TD=0
+I0523 09:16:52.889038 core/blockchain.go:227] Fast block: #0 [5510d8b0…] TD=0
+I0523 09:16:52.889692 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:16:52.911530 p2p/server.go:328] Starting Server
+I0523 09:16:52.911848 raft/handler.go:151] starting raft protocol handler
+I0523 09:16:52.911906 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:16:52.912791 p2p/server.go:447] new task: static dial f89fd6d9006672e6 10.50.0.5:21000
+I0523 09:16:52.913052 p2p/dial.go:268] dial tcp 10.50.0.5:21000 (f89fd6d90066)
+I0523 09:16:52.912937 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:16:52.911924 p2p/server.go:582] Listening on [::]:21000
+I0523 09:16:52.914231 p2p/server.go:616] Accepted conn 10.50.0.4:60006
+I0523 09:16:52.914256 raft/wal.go:43] replaying WAL
+I0523 09:16:52.917465 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:16:52.917713 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:16:52.918077 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60006
+I0523 09:16:52.918372 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60006 failed checkpoint posthandshake: Connected to self
+I0523 09:16:52.918171 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://f89fd6d9006672e690188d71db21bbc16964bfd4dce9299e459e6c2255f08ef87eb9185d3c7413602834bab276c298b3172cad875e8dceafd7d7809a92f4d5a1@10.50.0.5:21000?discport=0>, Connection ID <f89fd6d9006672e690188d71db21bbc16964bfd4dce9299e459e6c2255f08ef87eb9185d3c7413602834bab276c298b3172cad875e8dceafd7d7809a92f4d5a1>, Connection String <f89fd6d9006672e690188d71db21bbc16964bfd4dce9299e459e6c2255f08ef87eb9185d3c7413602834bab276c298b3172cad875e8dceafd7d7809a92f4d5a1> 
+I0523 09:16:52.918971 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:16:52.918118 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:16:52.919417 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:16:52.919199 p2p/server.go:505] <-posthandshake: static dial conn f89fd6d9006672e6 10.50.0.5:21000
+I0523 09:16:52.919875 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:16:52.920290 p2p/server.go:511] <-addpeer: static dial conn f89fd6d9006672e6 10.50.0.5:21000
+I0523 09:16:52.920703 p2p/server.go:495] <-taskdone: static dial f89fd6d9006672e6 10.50.0.5:21000
+I0523 09:16:52.920310 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:16:52.921560 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:16:52.922093 p2p/server.go:447] new task: wait for dial hist expire (29.999056421s)
+I0523 09:16:52.920816 p2p/server.go:724] Added Peer f89fd6d9006672e6 10.50.0.5:21000
+I0523 09:16:52.922693 p2p/peer.go:301] Peer f89fd6d9006672e6 10.50.0.5:21000: Starting protocol eth/63
+I0523 09:16:52.922932 eth/handler.go:260] Peer f89fd6d9006672e6 [eth/63]: peer connected [Geth/v1.5.0-unstable-ddb011f3/linux/go1.8]
+I0523 09:16:52.923343 eth/handler.go:272] Peer f89fd6d9006672e6 [eth/63]: adding peer
+I0523 09:16:52.923598 eth/downloader/downloader.go:252] Registering peer f89fd6d9006672e6
+I0523 09:16:52.926937 raft/wal.go:32] loading WAL at term 0 and index 0
+I0523 09:16:52.962613 raft/persistence.go:49] Persistent applied index load: 0
+I0523 09:16:52.962857 raft/handler.go:286] local raft ID is 1
+I0523 09:16:52.963099 raft/handler.go:310] starting raft with 2 total peers.
+raft2018/05/23 09:16:52 INFO: 1 became follower at term 0
+raft2018/05/23 09:16:52 INFO: newRaft 1 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+raft2018/05/23 09:16:52 INFO: 1 became follower at term 1
+I0523 09:16:52.964403 node/node.go:307] InProc registered *node.PrivateAdminAPI under 'admin'
+I0523 09:16:52.964933 node/node.go:307] InProc registered *node.PublicAdminAPI under 'admin'
+I0523 09:16:52.965304 node/node.go:307] InProc registered *debug.HandlerT under 'debug'
+I0523 09:16:52.965622 node/node.go:307] InProc registered *node.PublicDebugAPI under 'debug'
+I0523 09:16:52.965878 node/node.go:307] InProc registered *node.PublicWeb3API under 'web3'
+I0523 09:16:52.966165 node/node.go:307] InProc registered *raft.PublicRaftAPI under 'raft'
+I0523 09:16:52.966852 node/node.go:307] InProc registered *ethapi.PublicCompilerAPI under 'eth'
+I0523 09:16:52.967257 node/node.go:307] InProc registered *ethapi.CompilerAdminAPI under 'admin'
+I0523 09:16:52.967576 node/node.go:307] InProc registered *ethapi.PublicEthereumAPI under 'eth'
+I0523 09:16:52.967898 node/node.go:307] InProc registered *ethapi.PublicBlockChainAPI under 'eth'
+I0523 09:16:52.964936 core/state/statedb.go:431] (+) fa7b9770ca4cb04296cac84f37736d4041251cdf
+I0523 09:16:52.968772 core/state/statedb.go:431] (+) 0000000000000000000000000000000000000000
+I0523 09:16:52.969136 internal/ethapi/api.go:664] call took 4.450089ms
+I0523 09:16:52.969400 contracts/release/release.go:121] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
+I0523 09:16:52.968477 node/node.go:307] InProc registered *ethapi.PublicTransactionPoolAPI under 'eth'
+I0523 09:16:52.970110 node/node.go:307] InProc registered *ethapi.PublicTxPoolAPI under 'txpool'
+I0523 09:16:52.970498 node/node.go:307] InProc registered *ethapi.PublicDebugAPI under 'debug'
+I0523 09:16:52.970867 node/node.go:307] InProc registered *ethapi.PrivateDebugAPI under 'debug'
+I0523 09:16:52.971157 node/node.go:307] InProc registered *ethapi.PublicAccountAPI under 'eth'
+I0523 09:16:52.971476 node/node.go:307] InProc registered *ethapi.PrivateAccountAPI under 'personal'
+I0523 09:16:52.971785 node/node.go:307] InProc registered *eth.PublicEthereumAPI under 'eth'
+I0523 09:16:52.972073 node/node.go:307] InProc registered *downloader.PublicDownloaderAPI under 'eth'
+I0523 09:16:52.972406 node/node.go:307] InProc registered *filters.PublicFilterAPI under 'eth'
+I0523 09:16:52.972732 node/node.go:307] InProc registered *eth.PrivateAdminAPI under 'admin'
+I0523 09:16:52.973212 node/node.go:307] InProc registered *eth.PublicDebugAPI under 'debug'
+I0523 09:16:52.973619 node/node.go:307] InProc registered *eth.PrivateDebugAPI under 'debug'
+I0523 09:16:52.973926 node/node.go:307] InProc registered *ethapi.PublicNetAPI under 'net'
+I0523 09:16:52.974228 node/node.go:307] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
+I0523 09:16:52.974576 node/node.go:307] InProc registered *quorum.PublicQuorumAPI under 'quorum'
+I0523 09:16:52.975098 node/node.go:333] IPC registered *node.PrivateAdminAPI under 'admin'
+I0523 09:16:52.975385 node/node.go:333] IPC registered *node.PublicAdminAPI under 'admin'
+I0523 09:16:52.975776 node/node.go:333] IPC registered *debug.HandlerT under 'debug'
+I0523 09:16:52.976149 node/node.go:333] IPC registered *node.PublicDebugAPI under 'debug'
+I0523 09:16:52.976488 node/node.go:333] IPC registered *node.PublicWeb3API under 'web3'
+I0523 09:16:52.976784 node/node.go:333] IPC registered *raft.PublicRaftAPI under 'raft'
+I0523 09:16:52.977288 node/node.go:333] IPC registered *ethapi.PublicCompilerAPI under 'eth'
+I0523 09:16:52.977580 node/node.go:333] IPC registered *ethapi.CompilerAdminAPI under 'admin'
+I0523 09:16:52.977875 node/node.go:333] IPC registered *ethapi.PublicEthereumAPI under 'eth'
+I0523 09:16:52.978265 node/node.go:333] IPC registered *ethapi.PublicBlockChainAPI under 'eth'
+I0523 09:16:52.978680 node/node.go:333] IPC registered *ethapi.PublicTransactionPoolAPI under 'eth'
+I0523 09:16:52.979044 node/node.go:333] IPC registered *ethapi.PublicTxPoolAPI under 'txpool'
+I0523 09:16:52.979278 node/node.go:333] IPC registered *ethapi.PublicDebugAPI under 'debug'
+I0523 09:16:52.979641 node/node.go:333] IPC registered *ethapi.PrivateDebugAPI under 'debug'
+I0523 09:16:52.979943 node/node.go:333] IPC registered *ethapi.PublicAccountAPI under 'eth'
+I0523 09:16:52.965194 raft/handler.go:516] adding peer 1 due to ConfChangeAddNode
+I0523 09:16:52.980217 node/node.go:333] IPC registered *ethapi.PrivateAccountAPI under 'personal'
+I0523 09:16:52.981101 node/node.go:333] IPC registered *eth.PublicEthereumAPI under 'eth'
+I0523 09:16:52.981454 node/node.go:333] IPC registered *downloader.PublicDownloaderAPI under 'eth'
+I0523 09:16:52.981774 node/node.go:333] IPC registered *filters.PublicFilterAPI under 'eth'
+I0523 09:16:52.982241 node/node.go:333] IPC registered *eth.PrivateAdminAPI under 'admin'
+I0523 09:16:52.982519 node/node.go:333] IPC registered *eth.PublicDebugAPI under 'debug'
+I0523 09:16:52.982803 node/node.go:333] IPC registered *eth.PrivateDebugAPI under 'debug'
+I0523 09:16:52.983120 node/node.go:333] IPC registered *ethapi.PublicNetAPI under 'net'
+I0523 09:16:52.983435 node/node.go:333] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
+I0523 09:16:52.983707 node/node.go:333] IPC registered *quorum.PublicQuorumAPI under 'quorum'
+I0523 09:16:52.980846 raft/snapshot.go:37] start snapshot [applied index: 1 | last snapshot index: 0]
+I0523 09:16:52.986675 raft/snapshot.go:50] compacted log at index 1
+I0523 09:16:52.987040 raft/persistence.go:55] Persistent applied index write: 1
+I0523 09:16:52.986820 node/node.go:344] IPC endpoint opened: /node1/qdata/geth.ipc
+I0523 09:16:52.986804 node/node.go:402] HTTP registered *node.PrivateAdminAPI under 'admin'
+I0523 09:16:52.988120 node/node.go:402] HTTP registered *node.PublicAdminAPI under 'admin'
+I0523 09:16:52.988509 node/node.go:402] HTTP registered *debug.HandlerT under 'debug'
+I0523 09:16:52.988860 node/node.go:402] HTTP registered *node.PublicDebugAPI under 'debug'
+I0523 09:16:52.987595 raft/handler.go:516] adding peer 2 due to ConfChangeAddNode
+2018-05-23 09:16:52.989442 I | rafthttp: starting peer 2...
+2018-05-23 09:16:52.989710 I | rafthttp: started HTTP pipelining with peer 2
+I0523 09:16:52.989147 node/node.go:402] HTTP registered *node.PublicWeb3API under 'web3'
+I0523 09:16:52.990502 node/node.go:402] HTTP registered *ethapi.PublicCompilerAPI under 'eth'
+I0523 09:16:52.990895 node/node.go:402] HTTP registered *ethapi.CompilerAdminAPI under 'admin'
+2018-05-23 09:16:52.991093 I | rafthttp: started peer 2
+2018-05-23 09:16:52.991461 I | rafthttp: added peer 2
+I0523 09:16:52.991169 node/node.go:402] HTTP registered *ethapi.PublicEthereumAPI under 'eth'
+I0523 09:16:52.992137 node/node.go:402] HTTP registered *ethapi.PublicBlockChainAPI under 'eth'
+2018-05-23 09:16:52.991946 I | rafthttp: started streaming with peer 2 (writer)
+I0523 09:16:52.992620 node/node.go:402] HTTP registered *ethapi.PublicTransactionPoolAPI under 'eth'
+I0523 09:16:52.993129 node/node.go:402] HTTP registered *ethapi.PublicTxPoolAPI under 'txpool'
+I0523 09:16:52.993446 node/node.go:402] HTTP registered *ethapi.PublicDebugAPI under 'debug'
+I0523 09:16:52.993865 node/node.go:402] HTTP registered *ethapi.PrivateDebugAPI under 'debug'
+I0523 09:16:52.994233 node/node.go:402] HTTP registered *ethapi.PublicAccountAPI under 'eth'
+I0523 09:16:52.994550 node/node.go:402] HTTP registered *ethapi.PrivateAccountAPI under 'personal'
+I0523 09:16:52.994893 node/node.go:402] HTTP registered *eth.PublicEthereumAPI under 'eth'
+2018-05-23 09:16:52.992832 I | rafthttp: started streaming with peer 2 (stream MsgApp v2 reader)
+I0523 09:16:52.995152 node/node.go:402] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
+I0523 09:16:52.995756 node/node.go:402] HTTP registered *filters.PublicFilterAPI under 'eth'
+I0523 09:16:52.996393 node/node.go:402] HTTP registered *eth.PrivateAdminAPI under 'admin'
+I0523 09:16:52.996931 node/node.go:402] HTTP registered *eth.PublicDebugAPI under 'debug'
+2018-05-23 09:16:52.995602 I | rafthttp: started streaming with peer 2 (stream Message reader)
+I0523 09:16:52.997421 node/node.go:402] HTTP registered *eth.PrivateDebugAPI under 'debug'
+2018-05-23 09:16:52.997829 I | rafthttp: started streaming with peer 2 (writer)
+I0523 09:16:52.997939 node/node.go:402] HTTP registered *ethapi.PublicNetAPI under 'net'
+2018-05-23 09:16:52.998214 I | rafthttp: peer 2 became active
+2018-05-23 09:16:52.998900 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 reader)
+I0523 09:16:52.998631 node/node.go:402] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
+2018-05-23 09:16:52.999298 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message reader)
+I0523 09:16:52.999717 node/node.go:402] HTTP registered *quorum.PublicQuorumAPI under 'quorum'
+I0523 09:16:53.000310 node/node.go:414] HTTP endpoint opened: http://0.0.0.0:22000
+I0523 09:16:52.992006 raft/snapshot.go:37] start snapshot [applied index: 2 | last snapshot index: 1]
+I0523 09:16:53.002735 raft/snapshot.go:50] compacted log at index 2
+I0523 09:16:53.003184 raft/persistence.go:55] Persistent applied index write: 2
+I0523 09:16:53.006630 raft/handler.go:220] reporting that raft ID 2 is not removed
+2018-05-23 09:16:53.007232 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 writer)
+I0523 09:16:53.010449 raft/handler.go:220] reporting that raft ID 2 is not removed
+2018-05-23 09:16:53.010890 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message writer)
+raft2018/05/23 09:16:54 INFO: 1 [logterm: 1, index: 2, vote: 0] cast MsgPreVote for 2 [logterm: 1, index: 2] at term 1
+raft2018/05/23 09:16:54 INFO: 1 [term: 1] received a MsgVote message with higher term from 2 [term: 2]
+raft2018/05/23 09:16:54 INFO: 1 became follower at term 2
+raft2018/05/23 09:16:54 INFO: 1 [logterm: 1, index: 2, vote: 0] cast MsgVote for 2 [logterm: 1, index: 2] at term 2
+raft2018/05/23 09:16:54 INFO: raft.node: 1 elected leader 2 at term 2
+I0523 09:16:54.601136 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT BECAME-VERIFIER []
+I0523 09:16:54.601965 raft/persistence.go:55] Persistent applied index write: 3
+I0523 09:16:55.012896 p2p/nat/nat.go:109] network port tcp:21000 could not be mapped: no UPnP or NAT-PMP router discovered
+I0523 09:17:12.891773 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:17:22.922118 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999056421s)
+I0523 09:17:22.924734 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:17:22.925126 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:17:22.925653 p2p/server.go:616] Accepted conn 10.50.0.4:60022
+I0523 09:17:22.928088 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:17:22.928420 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:17:22.928757 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60022
+I0523 09:17:22.929058 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60022 failed checkpoint posthandshake: Connected to self
+I0523 09:17:22.929529 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:17:22.929822 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:17:22.930138 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:17:22.930409 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:17:22.930792 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:17:22.931064 p2p/server.go:447] new task: wait for dial hist expire (29.999996467s)
+I0523 09:17:32.893979 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:17:52.895250 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:17:52.931774 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996467s)
+I0523 09:17:52.932197 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:17:52.932460 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:17:52.932905 p2p/server.go:616] Accepted conn 10.50.0.4:60026
+I0523 09:17:52.935172 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:17:52.935682 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:17:52.936160 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60026
+I0523 09:17:52.936739 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60026 failed checkpoint posthandshake: Connected to self
+I0523 09:17:52.937314 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:17:52.938921 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:17:52.939718 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:17:52.939969 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:17:52.940298 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:17:52.940489 p2p/server.go:447] new task: wait for dial hist expire (29.999989263s)
+I0523 09:18:12.897512 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:18:22.941368 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999989263s)
+I0523 09:18:22.942233 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:18:22.942670 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:18:22.943269 p2p/server.go:616] Accepted conn 10.50.0.4:60030
+I0523 09:18:22.946443 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:18:22.946877 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:18:22.947136 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60030
+I0523 09:18:22.947469 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60030 failed checkpoint posthandshake: Connected to self
+I0523 09:18:22.946715 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:18:22.948145 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:18:22.948392 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:18:22.948692 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:18:22.949024 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:18:22.949275 p2p/server.go:447] new task: wait for dial hist expire (29.999996214s)
+I0523 09:18:32.898586 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:18:52.899816 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:18:52.950090 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996214s)
+I0523 09:18:52.950859 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:18:52.951318 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:18:52.951857 p2p/server.go:616] Accepted conn 10.50.0.4:60034
+I0523 09:18:52.954484 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:18:52.954848 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:18:52.955173 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60034
+I0523 09:18:52.955497 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60034 failed checkpoint posthandshake: Connected to self
+I0523 09:18:52.955706 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:18:52.955955 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:18:52.956162 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:18:52.956422 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:18:52.956808 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:18:52.957020 p2p/server.go:447] new task: wait for dial hist expire (29.99999695s)
+I0523 09:19:12.902256 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:19:22.959532 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.99999695s)
+I0523 09:19:22.960314 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:19:22.960961 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:19:22.961467 p2p/server.go:616] Accepted conn 10.50.0.4:60038
+I0523 09:19:22.963718 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:19:22.964038 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:19:22.963937 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:19:22.964505 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:19:22.964253 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60038
+I0523 09:19:22.964959 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:19:22.965188 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:19:22.965575 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:19:22.965858 p2p/server.go:447] new task: wait for dial hist expire (29.999996244s)
+I0523 09:19:22.964975 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60038 failed checkpoint posthandshake: Connected to self
+I0523 09:19:32.905302 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:19:52.906913 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:19:52.966773 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996244s)
+I0523 09:19:52.967948 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:19:52.968439 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:19:52.968880 p2p/server.go:616] Accepted conn 10.50.0.4:60042
+I0523 09:19:52.971390 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:19:52.971654 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:19:52.971929 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:19:52.972128 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:19:52.972375 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:19:52.971671 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:19:52.972800 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:19:52.973254 p2p/server.go:447] new task: wait for dial hist expire (29.999995208s)
+I0523 09:19:52.973538 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60042
+I0523 09:19:52.973825 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60042 failed checkpoint posthandshake: Connected to self
+I0523 09:20:12.909660 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:20:22.974467 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999995208s)
+I0523 09:20:22.974997 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:20:22.975503 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:20:22.975874 p2p/server.go:616] Accepted conn 10.50.0.4:60046
+I0523 09:20:22.978218 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:20:22.978541 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:20:22.978834 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60046
+I0523 09:20:22.979132 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60046 failed checkpoint posthandshake: Connected to self
+I0523 09:20:22.979439 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:20:22.979696 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:20:22.979940 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:20:22.980176 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:20:22.980498 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:20:22.980752 p2p/server.go:447] new task: wait for dial hist expire (29.999996629s)
+I0523 09:20:32.912585 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:20:36.997462 core/tx_pool.go:324] (t) 0xc2efa262 => [NEW_CONTRACT] (0x917850) 7cb8a45f75ae887aa453add08fd72313211b3a737383c1757ee1357732ea0c32
+I0523 09:20:36.997952 core/tx_pool.go:507] Promoting queued transaction: 
+	TX(7cb8a45f75ae887aa453add08fd72313211b3a737383c1757ee1357732ea0c32)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       [contract creation]
+	Nonce:    0
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x6060604052341561000f57600080fd5b6103398061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630900f01014610072578063445df0ac146100ab5780638da5cb5b146100d457806390fa17bb14610129578063fdacd5761461013e575b600080fd5b341561007d57600080fd5b6100a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610161565b005b34156100b657600080fd5b6100be610240565b6040518082815260200191505060405180910390f35b34156100df57600080fd5b6100e7610246565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561013457600080fd5b61013c61026b565b005b341561014957600080fd5b61015f60048080359060200190919050506102ad565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561023c578190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050600060405180830381600087803b151561022b57600080fd5b5af1151561023857600080fd5b5050505b5050565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561030a57806001819055505b505600a165627a7a7230582076c15f8dbac7cfcb966ea13a7020ca377f01801e9baefce21704fd0e7b274f800029
+	V:        0x1b
+	R:        0xf8c979b3265a35117bb4944e47a461e7cc0f21ed40b7950483b6e248bc5247e5
+	S:        0x33917db823ba92b8472cb38c91f7811c6fa5ba6afdeb1b883cee08829ffb1899
+	Hex:      f903a58080838954408080b903576060604052341561000f57600080fd5b6103398061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630900f01014610072578063445df0ac146100ab5780638da5cb5b146100d457806390fa17bb14610129578063fdacd5761461013e575b600080fd5b341561007d57600080fd5b6100a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610161565b005b34156100b657600080fd5b6100be610240565b6040518082815260200191505060405180910390f35b34156100df57600080fd5b6100e7610246565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561013457600080fd5b61013c61026b565b005b341561014957600080fd5b61015f60048080359060200190919050506102ad565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561023c578190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050600060405180830381600087803b151561022b57600080fd5b5af1151561023857600080fd5b5050505b5050565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561030a57806001819055505b505600a165627a7a7230582076c15f8dbac7cfcb966ea13a7020ca377f01801e9baefce21704fd0e7b274f8000291ba0f8c979b3265a35117bb4944e47a461e7cc0f21ed40b7950483b6e248bc5247e5a033917db823ba92b8472cb38c91f7811c6fa5ba6afdeb1b883cee08829ffb1899
+I0523 09:20:36.998621 internal/ethapi/api.go:1195] Tx(0x7cb8a45f75ae887aa453add08fd72313211b3a737383c1757ee1357732ea0c32) created: 0x0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+I0523 09:20:36.999365 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-CREATED [0x7cb8a45f75ae887aa453add08fd72313211b3a737383c1757ee1357732ea0c32 0x0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd]
+I0523 09:20:37.000235 eth/handler.go:751] broadcast tx to 1 peers
+I0523 09:20:37.011907 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-ACCEPTED [0x7cb8a45f75ae887aa453add08fd72313211b3a737383c1757ee1357732ea0c32]
+I0523 09:20:37.013015 core/state/statedb.go:431] (+) 0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+I0523 09:20:37.013263 core/vm/vm.go:120] running byte VM 1424abbb
+I0523 09:20:37.013536 core/vm/vm.go:123] byte VM 1424abbb done. time: 58.663µs instrc: 14
+I0523 09:20:37.013772 core/state/statedb.go:431] (+) 0000000000000000000000000000000000000000
+I0523 09:20:37.014147 core/state/state_object.go:235] 0000000000000000000000000000000000000000: #0 5000000000000000000 (+ 5000000000000000000)
+I0523 09:20:37.014431 core/state/statedb.go:577] Trie cache stats: 18 misses, 0 unloads
+I0523 09:20:37.015176 core/state/statedb.go:577] Trie cache stats: 18 misses, 0 unloads
+I0523 09:20:37.015840 core/database_util.go:424] stored block receipts [7008de43…]
+I0523 09:20:37.016189 core/database_util.go:388] stored block total difficulty [7008de43…]: 131072
+I0523 09:20:37.016696 core/database_util.go:374] stored block body [7008de43…]
+I0523 09:20:37.017335 core/database_util.go:360] stored header #1 [7008de43…]
+I0523 09:20:37.018372 core/blockchain.go:982] inserted block #1 [7008de43…] in   5.890ms:   1 txs  270071 gas 0 uncles.
+I0523 09:20:37.022017 core/blockchain.go:1069] imported 1 blocks,     1 txs (  0.270 Mg) in   9.531ms (28.333 Mg/s). #1 [7008de43…]
+I0523 09:20:37.022263 raft/handler.go:636] Successfully extended chain: 7008de430bacb15054db6d1a1f6cfd212c738acffc1ccdc3bccff44535b37025
+I0523 09:20:37.023085 raft/persistence.go:55] Persistent applied index write: 4
+I0523 09:20:37.023189 core/tx_pool.go:629] Removed old pending transaction: 
+	TX(7cb8a45f75ae887aa453add08fd72313211b3a737383c1757ee1357732ea0c32)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       [contract creation]
+	Nonce:    0
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x6060604052341561000f57600080fd5b6103398061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630900f01014610072578063445df0ac146100ab5780638da5cb5b146100d457806390fa17bb14610129578063fdacd5761461013e575b600080fd5b341561007d57600080fd5b6100a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610161565b005b34156100b657600080fd5b6100be610240565b6040518082815260200191505060405180910390f35b34156100df57600080fd5b6100e7610246565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561013457600080fd5b61013c61026b565b005b341561014957600080fd5b61015f60048080359060200190919050506102ad565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561023c578190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050600060405180830381600087803b151561022b57600080fd5b5af1151561023857600080fd5b5050505b5050565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561030a57806001819055505b505600a165627a7a7230582076c15f8dbac7cfcb966ea13a7020ca377f01801e9baefce21704fd0e7b274f800029
+	V:        0x1b
+	R:        0xf8c979b3265a35117bb4944e47a461e7cc0f21ed40b7950483b6e248bc5247e5
+	S:        0x33917db823ba92b8472cb38c91f7811c6fa5ba6afdeb1b883cee08829ffb1899
+	Hex:      f903a58080838954408080b903576060604052341561000f57600080fd5b6103398061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630900f01014610072578063445df0ac146100ab5780638da5cb5b146100d457806390fa17bb14610129578063fdacd5761461013e575b600080fd5b341561007d57600080fd5b6100a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610161565b005b34156100b657600080fd5b6100be610240565b6040518082815260200191505060405180910390f35b34156100df57600080fd5b6100e7610246565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561013457600080fd5b61013c61026b565b005b341561014957600080fd5b61015f60048080359060200190919050506102ad565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561023c578190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050600060405180830381600087803b151561022b57600080fd5b5af1151561023857600080fd5b5050505b5050565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561030a57806001819055505b505600a165627a7a7230582076c15f8dbac7cfcb966ea13a7020ca377f01801e9baefce21704fd0e7b274f8000291ba0f8c979b3265a35117bb4944e47a461e7cc0f21ed40b7950483b6e248bc5247e5a033917db823ba92b8472cb38c91f7811c6fa5ba6afdeb1b883cee08829ffb1899
+I0523 09:20:37.564273 core/tx_pool.go:324] (t) 0xc2efa262 => 0d0615d0 (0x917850) 0793dde659a3b4f1b4e475cbdca384324ed2c7a75936dab72b71073d3eb4a198
+I0523 09:20:37.565292 core/tx_pool.go:507] Promoting queued transaction: 
+	TX(0793dde659a3b4f1b4e475cbdca384324ed2c7a75936dab72b71073d3eb4a198)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+	Nonce:    1
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0xfdacd5760000000000000000000000000000000000000000000000000000000000000001
+	V:        0x1b
+	R:        0xcf0e07803a1c72e2c4b831d052548b606ef626f551141ffeb68a847377fe998f
+	S:        0x20421ae01114f6087e279c4d3684786e10e0b27bb30714184f9c45644e9e1e7
+	Hex:      f884018083895440940d0615d0bbb0895efc121aa5842a31a1a5e0b6dd80a4fdacd57600000000000000000000000000000000000000000000000000000000000000011ba0cf0e07803a1c72e2c4b831d052548b606ef626f551141ffeb68a847377fe998fa0020421ae01114f6087e279c4d3684786e10e0b27bb30714184f9c45644e9e1e7
+I0523 09:20:37.565920 internal/ethapi/api.go:1198] Tx(0x0793dde659a3b4f1b4e475cbdca384324ed2c7a75936dab72b71073d3eb4a198) to: 0x0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+I0523 09:20:37.567420 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-CREATED [0x0793dde659a3b4f1b4e475cbdca384324ed2c7a75936dab72b71073d3eb4a198 0x0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd]
+I0523 09:20:37.566353 eth/handler.go:751] broadcast tx to 1 peers
+I0523 09:20:37.572089 internal/ethapi/api.go:1090] receipt not found for transaction 0x0793dde659a3b4f1b4e475cbdca384324ed2c7a75936dab72b71073d3eb4a198
+I0523 09:20:37.573583 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-ACCEPTED [0x0793dde659a3b4f1b4e475cbdca384324ed2c7a75936dab72b71073d3eb4a198]
+I0523 09:20:37.574593 core/vm/vm.go:120] running byte VM 51d49ebd
+I0523 09:20:37.574892 core/vm/vm.go:123] byte VM 51d49ebd done. time: 105.266µs instrc: 86
+I0523 09:20:37.575110 core/state/state_object.go:235] 0000000000000000000000000000000000000000: #0 10000000000000000000 (+ 5000000000000000000)
+I0523 09:20:37.575413 core/state/statedb.go:577] Trie cache stats: 20 misses, 0 unloads
+I0523 09:20:37.575831 core/state/statedb.go:577] Trie cache stats: 20 misses, 0 unloads
+I0523 09:20:37.576391 core/database_util.go:424] stored block receipts [ff138a93…]
+I0523 09:20:37.576743 core/database_util.go:388] stored block total difficulty [ff138a93…]: 262144
+I0523 09:20:37.577170 core/database_util.go:374] stored block body [ff138a93…]
+I0523 09:20:37.577773 core/database_util.go:360] stored header #2 [ff138a93…]
+I0523 09:20:37.578791 core/blockchain.go:982] inserted block #2 [ff138a93…] in   4.669ms:   1 txs   21839 gas 0 uncles.
+I0523 09:20:37.580283 core/blockchain.go:1069] imported 1 blocks,     1 txs (  0.022 Mg) in   6.163ms ( 3.543 Mg/s). #2 [ff138a93…]
+I0523 09:20:37.580534 raft/handler.go:636] Successfully extended chain: ff138a931f5f5653e593d442f99899b723f6d965a507e61841177f47dd40af80
+I0523 09:20:37.580731 raft/persistence.go:55] Persistent applied index write: 5
+I0523 09:20:37.580708 core/tx_pool.go:629] Removed old pending transaction: 
+	TX(0793dde659a3b4f1b4e475cbdca384324ed2c7a75936dab72b71073d3eb4a198)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+	Nonce:    1
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0xfdacd5760000000000000000000000000000000000000000000000000000000000000001
+	V:        0x1b
+	R:        0xcf0e07803a1c72e2c4b831d052548b606ef626f551141ffeb68a847377fe998f
+	S:        0x20421ae01114f6087e279c4d3684786e10e0b27bb30714184f9c45644e9e1e7
+	Hex:      f884018083895440940d0615d0bbb0895efc121aa5842a31a1a5e0b6dd80a4fdacd57600000000000000000000000000000000000000000000000000000000000000011ba0cf0e07803a1c72e2c4b831d052548b606ef626f551141ffeb68a847377fe998fa0020421ae01114f6087e279c4d3684786e10e0b27bb30714184f9c45644e9e1e7
+I0523 09:20:38.603033 core/tx_pool.go:324] (t) 0xc2efa262 => [NEW_CONTRACT] (0x917850) fed79864f758352687f00ee41a0702305885d9cb7fed2bfcb7cc3b6d64c28852
+I0523 09:20:38.603382 core/tx_pool.go:507] Promoting queued transaction: 
+	TX(fed79864f758352687f00ee41a0702305885d9cb7fed2bfcb7cc3b6d64c28852)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       [contract creation]
+	Nonce:    2
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x6060604052341561000f57600080fd5b61045c8061001e6000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806315c281bd14610067578063186dfe9014610093578063661b1159146100bf5780639799b4e7146100eb575b600080fd5b341561007257600080fd5b6100916004808035906020019091908035906020019091905050610129565b005b341561009e57600080fd5b6100bd60048080359060200190919080359060200190919050506101d0565b005b34156100ca57600080fd5b6100e960048080359060200190919080359060200190919050506102a9565b005b34156100f657600080fd5b61010c6004808035906020019091905050610382565b604051808381526020018281526020019250505060405180910390f35b600060016000805480600101828161014191906103b5565b916000526020600020906002020160006040805190810160405280888152602001878152509091909150600082015181600001556020820151816001015550500390507f2bacc90371a678e39af9acdd05c3679eed212d8d2cd7b5b4a62484dab0f0c00883838360405180848152602001838152602001828152602001935050505060405180910390a1505050565b6101d86103e7565b6000838154811015156101e757fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160000181815250508060008481548110151561023057fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fe8efaed40c8528709f01c424eebd3d07f39fea1026f021c01bdcebdc5da62a25816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b6102b16103e7565b6000838154811015156102c057fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160200181815250508060008481548110151561030957fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fc0527cad2fef73a457af38fe11cbd989ee6b9787f117b821f2c41ecfdea75fdc816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b60008181548110151561039157fe5b90600052602060002090600202016000915090508060000154908060010154905082565b8154818355818115116103e2576002028160020283600052602060002091820191016103e19190610401565b5b505050565b604080519081016040528060008152602001600081525090565b61042d91905b8082111561042957600080820160009055600182016000905550600201610407565b5090565b905600a165627a7a72305820461012278999059a56d3c194b15c2c73f73b2a2c738bf2ba4046665f8d386e560029
+	V:        0x1c
+	R:        0x23366b97560990b6ceab4d10de35b2a6ac4479e6fb192c5cd0b00247dd247fd9
+	S:        0x1c3dced962e460addf64ef361156adb97860945dfae3a4c647579a6caee10cdc
+	Hex:      f904c80280838954408080b9047a6060604052341561000f57600080fd5b61045c8061001e6000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806315c281bd14610067578063186dfe9014610093578063661b1159146100bf5780639799b4e7146100eb575b600080fd5b341561007257600080fd5b6100916004808035906020019091908035906020019091905050610129565b005b341561009e57600080fd5b6100bd60048080359060200190919080359060200190919050506101d0565b005b34156100ca57600080fd5b6100e960048080359060200190919080359060200190919050506102a9565b005b34156100f657600080fd5b61010c6004808035906020019091905050610382565b604051808381526020018281526020019250505060405180910390f35b600060016000805480600101828161014191906103b5565b916000526020600020906002020160006040805190810160405280888152602001878152509091909150600082015181600001556020820151816001015550500390507f2bacc90371a678e39af9acdd05c3679eed212d8d2cd7b5b4a62484dab0f0c00883838360405180848152602001838152602001828152602001935050505060405180910390a1505050565b6101d86103e7565b6000838154811015156101e757fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160000181815250508060008481548110151561023057fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fe8efaed40c8528709f01c424eebd3d07f39fea1026f021c01bdcebdc5da62a25816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b6102b16103e7565b6000838154811015156102c057fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160200181815250508060008481548110151561030957fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fc0527cad2fef73a457af38fe11cbd989ee6b9787f117b821f2c41ecfdea75fdc816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b60008181548110151561039157fe5b90600052602060002090600202016000915090508060000154908060010154905082565b8154818355818115116103e2576002028160020283600052602060002091820191016103e19190610401565b5b505050565b604080519081016040528060008152602001600081525090565b61042d91905b8082111561042957600080820160009055600182016000905550600201610407565b5090565b905600a165627a7a72305820461012278999059a56d3c194b15c2c73f73b2a2c738bf2ba4046665f8d386e5600291ca023366b97560990b6ceab4d10de35b2a6ac4479e6fb192c5cd0b00247dd247fd9a01c3dced962e460addf64ef361156adb97860945dfae3a4c647579a6caee10cdc
+I0523 09:20:38.603727 internal/ethapi/api.go:1195] Tx(0xfed79864f758352687f00ee41a0702305885d9cb7fed2bfcb7cc3b6d64c28852) created: 0xc63da08c8a427916d4629a5c5b32c84c37feb275
+I0523 09:20:38.603903 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-CREATED [0xfed79864f758352687f00ee41a0702305885d9cb7fed2bfcb7cc3b6d64c28852 0xc63da08c8a427916d4629a5c5b32c84c37feb275]
+I0523 09:20:38.604129 eth/handler.go:751] broadcast tx to 1 peers
+I0523 09:20:38.610426 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-ACCEPTED [0xfed79864f758352687f00ee41a0702305885d9cb7fed2bfcb7cc3b6d64c28852]
+I0523 09:20:38.611336 core/state/statedb.go:431] (+) c63da08c8a427916d4629a5c5b32c84c37feb275
+I0523 09:20:38.611593 core/vm/vm.go:120] running byte VM 09e601f3
+I0523 09:20:38.611808 core/vm/vm.go:123] byte VM 09e601f3 done. time: 32.238µs instrc: 14
+I0523 09:20:38.612127 core/state/state_object.go:235] 0000000000000000000000000000000000000000: #0 15000000000000000000 (+ 5000000000000000000)
+I0523 09:20:38.612447 core/state/statedb.go:577] Trie cache stats: 23 misses, 0 unloads
+I0523 09:20:38.612936 core/state/statedb.go:577] Trie cache stats: 23 misses, 0 unloads
+I0523 09:20:38.613771 core/database_util.go:424] stored block receipts [8f90698a…]
+I0523 09:20:38.614285 core/database_util.go:388] stored block total difficulty [8f90698a…]: 393216
+I0523 09:20:38.614781 core/database_util.go:374] stored block body [8f90698a…]
+I0523 09:20:38.615469 core/database_util.go:360] stored header #3 [8f90698a…]
+I0523 09:20:38.617290 core/blockchain.go:982] inserted block #3 [8f90698a…] in   6.453ms:   1 txs  348178 gas 0 uncles.
+I0523 09:20:38.619320 core/blockchain.go:1069] imported 1 blocks,     1 txs (  0.348 Mg) in   8.484ms (41.038 Mg/s). #3 [8f90698a…]
+I0523 09:20:38.619728 raft/handler.go:636] Successfully extended chain: 8f90698ad23626a10d6884697ec3164024d1d9c5e798ba4ed3e8cf667e580653
+I0523 09:20:38.620211 raft/persistence.go:55] Persistent applied index write: 6
+I0523 09:20:38.620138 core/tx_pool.go:629] Removed old pending transaction: 
+	TX(fed79864f758352687f00ee41a0702305885d9cb7fed2bfcb7cc3b6d64c28852)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       [contract creation]
+	Nonce:    2
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x6060604052341561000f57600080fd5b61045c8061001e6000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806315c281bd14610067578063186dfe9014610093578063661b1159146100bf5780639799b4e7146100eb575b600080fd5b341561007257600080fd5b6100916004808035906020019091908035906020019091905050610129565b005b341561009e57600080fd5b6100bd60048080359060200190919080359060200190919050506101d0565b005b34156100ca57600080fd5b6100e960048080359060200190919080359060200190919050506102a9565b005b34156100f657600080fd5b61010c6004808035906020019091905050610382565b604051808381526020018281526020019250505060405180910390f35b600060016000805480600101828161014191906103b5565b916000526020600020906002020160006040805190810160405280888152602001878152509091909150600082015181600001556020820151816001015550500390507f2bacc90371a678e39af9acdd05c3679eed212d8d2cd7b5b4a62484dab0f0c00883838360405180848152602001838152602001828152602001935050505060405180910390a1505050565b6101d86103e7565b6000838154811015156101e757fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160000181815250508060008481548110151561023057fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fe8efaed40c8528709f01c424eebd3d07f39fea1026f021c01bdcebdc5da62a25816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b6102b16103e7565b6000838154811015156102c057fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160200181815250508060008481548110151561030957fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fc0527cad2fef73a457af38fe11cbd989ee6b9787f117b821f2c41ecfdea75fdc816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b60008181548110151561039157fe5b90600052602060002090600202016000915090508060000154908060010154905082565b8154818355818115116103e2576002028160020283600052602060002091820191016103e19190610401565b5b505050565b604080519081016040528060008152602001600081525090565b61042d91905b8082111561042957600080820160009055600182016000905550600201610407565b5090565b905600a165627a7a72305820461012278999059a56d3c194b15c2c73f73b2a2c738bf2ba4046665f8d386e560029
+	V:        0x1c
+	R:        0x23366b97560990b6ceab4d10de35b2a6ac4479e6fb192c5cd0b00247dd247fd9
+	S:        0x1c3dced962e460addf64ef361156adb97860945dfae3a4c647579a6caee10cdc
+	Hex:      f904c80280838954408080b9047a6060604052341561000f57600080fd5b61045c8061001e6000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806315c281bd14610067578063186dfe9014610093578063661b1159146100bf5780639799b4e7146100eb575b600080fd5b341561007257600080fd5b6100916004808035906020019091908035906020019091905050610129565b005b341561009e57600080fd5b6100bd60048080359060200190919080359060200190919050506101d0565b005b34156100ca57600080fd5b6100e960048080359060200190919080359060200190919050506102a9565b005b34156100f657600080fd5b61010c6004808035906020019091905050610382565b604051808381526020018281526020019250505060405180910390f35b600060016000805480600101828161014191906103b5565b916000526020600020906002020160006040805190810160405280888152602001878152509091909150600082015181600001556020820151816001015550500390507f2bacc90371a678e39af9acdd05c3679eed212d8d2cd7b5b4a62484dab0f0c00883838360405180848152602001838152602001828152602001935050505060405180910390a1505050565b6101d86103e7565b6000838154811015156101e757fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160000181815250508060008481548110151561023057fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fe8efaed40c8528709f01c424eebd3d07f39fea1026f021c01bdcebdc5da62a25816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b6102b16103e7565b6000838154811015156102c057fe5b9060005260206000209060020201604080519081016040529081600082015481526020016001820154815250509050818160200181815250508060008481548110151561030957fe5b906000526020600020906002020160008201518160000155602082015181600101559050507fc0527cad2fef73a457af38fe11cbd989ee6b9787f117b821f2c41ecfdea75fdc816000015182602001518560405180848152602001838152602001828152602001935050505060405180910390a1505050565b60008181548110151561039157fe5b90600052602060002090600202016000915090508060000154908060010154905082565b8154818355818115116103e2576002028160020283600052602060002091820191016103e19190610401565b5b505050565b604080519081016040528060008152602001600081525090565b61042d91905b8082111561042957600080820160009055600182016000905550600201610407565b5090565b905600a165627a7a72305820461012278999059a56d3c194b15c2c73f73b2a2c738bf2ba4046665f8d386e5600291ca023366b97560990b6ceab4d10de35b2a6ac4479e6fb192c5cd0b00247dd247fd9a01c3dced962e460addf64ef361156adb97860945dfae3a4c647579a6caee10cdc
+I0523 09:20:39.132072 core/tx_pool.go:324] (t) 0xc2efa262 => 0d0615d0 (0x917850) 15abeea5f054129edfe9b19438542875f34528ffc733e449327dc8bada3694c0
+I0523 09:20:39.132428 core/tx_pool.go:507] Promoting queued transaction: 
+	TX(15abeea5f054129edfe9b19438542875f34528ffc733e449327dc8bada3694c0)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+	Nonce:    3
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0xfdacd5760000000000000000000000000000000000000000000000000000000000000002
+	V:        0x1c
+	R:        0x909280fd674897cb48410268f86907a49781804965bb4bb68360f0a171956d71
+	S:        0x36698cb4cc4eb2b261be6c5e7790b7f697c5f700f959e2d8b874c1d2a0cb7cc2
+	Hex:      f884038083895440940d0615d0bbb0895efc121aa5842a31a1a5e0b6dd80a4fdacd57600000000000000000000000000000000000000000000000000000000000000021ca0909280fd674897cb48410268f86907a49781804965bb4bb68360f0a171956d71a036698cb4cc4eb2b261be6c5e7790b7f697c5f700f959e2d8b874c1d2a0cb7cc2
+I0523 09:20:39.132806 internal/ethapi/api.go:1198] Tx(0x15abeea5f054129edfe9b19438542875f34528ffc733e449327dc8bada3694c0) to: 0x0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+I0523 09:20:39.133128 eth/handler.go:751] broadcast tx to 1 peers
+I0523 09:20:39.133128 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-CREATED [0x15abeea5f054129edfe9b19438542875f34528ffc733e449327dc8bada3694c0 0x0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd]
+I0523 09:20:39.136484 internal/ethapi/api.go:1090] receipt not found for transaction 0x15abeea5f054129edfe9b19438542875f34528ffc733e449327dc8bada3694c0
+I0523 09:20:39.138892 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-ACCEPTED [0x15abeea5f054129edfe9b19438542875f34528ffc733e449327dc8bada3694c0]
+I0523 09:20:39.139576 core/vm/vm.go:120] running byte VM 51d49ebd
+I0523 09:20:39.139902 core/vm/vm.go:123] byte VM 51d49ebd done. time: 107.433µs instrc: 86
+I0523 09:20:39.140172 core/state/state_object.go:235] 0000000000000000000000000000000000000000: #0 20000000000000000000 (+ 5000000000000000000)
+I0523 09:20:39.140477 core/state/statedb.go:577] Trie cache stats: 25 misses, 0 unloads
+I0523 09:20:39.140976 core/state/statedb.go:577] Trie cache stats: 25 misses, 0 unloads
+I0523 09:20:39.141951 core/database_util.go:424] stored block receipts [8536535f…]
+I0523 09:20:39.144220 core/database_util.go:388] stored block total difficulty [8536535f…]: 524288
+I0523 09:20:39.144698 core/database_util.go:374] stored block body [8536535f…]
+I0523 09:20:39.145672 core/database_util.go:360] stored header #4 [8536535f…]
+I0523 09:20:39.146856 core/blockchain.go:982] inserted block #4 [8536535f…] in   7.731ms:   1 txs   21839 gas 0 uncles.
+I0523 09:20:39.148006 core/blockchain.go:1069] imported 1 blocks,     1 txs (  0.022 Mg) in   8.894ms ( 2.455 Mg/s). #4 [8536535f…]
+I0523 09:20:39.148294 raft/handler.go:636] Successfully extended chain: 8536535f74d822073fd599c722a7761098812634e20c1332a6dac2baf4cea51b
+I0523 09:20:39.148513 raft/persistence.go:55] Persistent applied index write: 7
+I0523 09:20:39.148552 core/tx_pool.go:629] Removed old pending transaction: 
+	TX(15abeea5f054129edfe9b19438542875f34528ffc733e449327dc8bada3694c0)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       0d0615d0bbb0895efc121aa5842a31a1a5e0b6dd
+	Nonce:    3
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0xfdacd5760000000000000000000000000000000000000000000000000000000000000002
+	V:        0x1c
+	R:        0x909280fd674897cb48410268f86907a49781804965bb4bb68360f0a171956d71
+	S:        0x36698cb4cc4eb2b261be6c5e7790b7f697c5f700f959e2d8b874c1d2a0cb7cc2
+	Hex:      f884038083895440940d0615d0bbb0895efc121aa5842a31a1a5e0b6dd80a4fdacd57600000000000000000000000000000000000000000000000000000000000000021ca0909280fd674897cb48410268f86907a49781804965bb4bb68360f0a171956d71a036698cb4cc4eb2b261be6c5e7790b7f697c5f700f959e2d8b874c1d2a0cb7cc2
+I0523 09:20:52.914680 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:20:52.981513 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996629s)
+I0523 09:20:52.982045 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:20:52.982320 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:20:52.982724 p2p/server.go:616] Accepted conn 10.50.0.4:60110
+I0523 09:20:52.984878 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:20:52.985195 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:20:52.985444 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60110
+I0523 09:20:52.985746 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60110 failed checkpoint posthandshake: Connected to self
+I0523 09:20:52.986017 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:20:52.986729 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:20:52.986962 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:20:52.987187 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:20:52.987563 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:20:52.987769 p2p/server.go:447] new task: wait for dial hist expire (29.999995585s)
+I0523 09:21:12.918194 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:21:22.988524 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999995585s)
+I0523 09:21:22.989153 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:21:22.989568 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:21:22.989987 p2p/server.go:616] Accepted conn 10.50.0.4:60114
+I0523 09:21:22.992465 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:21:22.992751 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:21:22.992879 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:21:22.993170 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:21:22.992954 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60114
+I0523 09:21:22.993666 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:21:22.993911 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:21:22.993709 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60114 failed checkpoint posthandshake: Connected to self
+I0523 09:21:22.994411 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:21:22.994605 p2p/server.go:447] new task: wait for dial hist expire (29.999984423s)
+I0523 09:21:32.920890 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:21:52.921742 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:21:52.995067 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999984423s)
+I0523 09:21:52.995699 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:21:52.996163 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:21:52.996678 p2p/server.go:616] Accepted conn 10.50.0.4:60118
+I0523 09:21:52.999771 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:21:53.000137 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:21:53.000465 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60118
+I0523 09:21:53.000801 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60118 failed checkpoint posthandshake: Connected to self
+I0523 09:21:53.000940 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:21:53.001330 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:21:53.001659 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:21:53.001895 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:21:53.002226 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:21:53.002446 p2p/server.go:447] new task: wait for dial hist expire (29.999995818s)
+I0523 09:22:12.924017 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:22:23.003410 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999995818s)
+I0523 09:22:23.004552 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:22:23.005127 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:22:23.005787 p2p/server.go:616] Accepted conn 10.50.0.4:60122
+I0523 09:22:23.008483 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:22:23.008853 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:22:23.009165 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60122
+I0523 09:22:23.009511 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60122 failed checkpoint posthandshake: Connected to self
+I0523 09:22:23.009864 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:22:23.010163 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:22:23.010384 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:22:23.010618 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:22:23.010983 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:22:23.011213 p2p/server.go:447] new task: wait for dial hist expire (29.999996076s)
+I0523 09:22:32.927827 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:22:51.939742 core/tx_pool.go:324] (t) 0xc2efa262 => c63da08c (0x917850) dfc0ecc2716aaeb4fca890b913a877956de5a3b4642de24deab1f6e607ac0c56
+I0523 09:22:51.941808 core/tx_pool.go:507] Promoting queued transaction: 
+	TX(dfc0ecc2716aaeb4fca890b913a877956de5a3b4642de24deab1f6e607ac0c56)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       c63da08c8a427916d4629a5c5b32c84c37feb275
+	Nonce:    4
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x15c281bd00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+	V:        0x1b
+	R:        0xf8fe9186c43bd8727cf8585fc7180eea6496b454adb86bbc52c8e03e6cdcdf0c
+	S:        0x46a5d5261bd65fdbb26b9502f98b6f0d83c8cad7930fba4d86acdb7bbff6e531
+	Hex:      f8a504808389544094c63da08c8a427916d4629a5c5b32c84c37feb27580b84415c281bd000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001ba0f8fe9186c43bd8727cf8585fc7180eea6496b454adb86bbc52c8e03e6cdcdf0ca046a5d5261bd65fdbb26b9502f98b6f0d83c8cad7930fba4d86acdb7bbff6e531
+I0523 09:22:51.942284 internal/ethapi/api.go:1198] Tx(0xdfc0ecc2716aaeb4fca890b913a877956de5a3b4642de24deab1f6e607ac0c56) to: 0xc63da08c8a427916d4629a5c5b32c84c37feb275
+I0523 09:22:51.942607 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-CREATED [0xdfc0ecc2716aaeb4fca890b913a877956de5a3b4642de24deab1f6e607ac0c56 0xc63da08c8a427916d4629a5c5b32c84c37feb275]
+I0523 09:22:51.942861 eth/handler.go:751] broadcast tx to 1 peers
+I0523 09:22:51.951512 internal/ethapi/api.go:1090] receipt not found for transaction 0xdfc0ecc2716aaeb4fca890b913a877956de5a3b4642de24deab1f6e607ac0c56
+I0523 09:22:51.959080 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-ACCEPTED [0xdfc0ecc2716aaeb4fca890b913a877956de5a3b4642de24deab1f6e607ac0c56]
+I0523 09:22:51.959902 core/vm/vm.go:120] running byte VM 39985ed7
+I0523 09:22:51.960440 core/vm/vm.go:123] byte VM 39985ed7 done. time: 284.009µs instrc: 217
+I0523 09:22:51.960820 core/state/state_object.go:235] 0000000000000000000000000000000000000000: #0 25000000000000000000 (+ 5000000000000000000)
+I0523 09:22:51.961249 core/state/statedb.go:577] Trie cache stats: 27 misses, 0 unloads
+I0523 09:22:51.962076 core/state/statedb.go:577] Trie cache stats: 27 misses, 0 unloads
+I0523 09:22:51.962919 core/database_util.go:424] stored block receipts [745ca503…]
+I0523 09:22:51.963389 core/database_util.go:388] stored block total difficulty [745ca503…]: 655360
+I0523 09:22:51.964003 core/database_util.go:374] stored block body [745ca503…]
+I0523 09:22:51.964800 core/database_util.go:360] stored header #5 [745ca503…]
+I0523 09:22:51.965983 core/blockchain.go:982] inserted block #5 [745ca503…] in   6.632ms:   1 txs   53903 gas 0 uncles.
+I0523 09:22:51.971112 core/blockchain.go:1069] imported 1 blocks,     1 txs (  0.054 Mg) in  11.768ms ( 4.580 Mg/s). #5 [745ca503…]
+I0523 09:22:51.971341 raft/handler.go:636] Successfully extended chain: 745ca5033a27219dbbe4319b164fa8fee366d5ce89bd42fff3cea783967f0a3c
+I0523 09:22:51.971634 raft/persistence.go:55] Persistent applied index write: 8
+I0523 09:22:51.971580 core/tx_pool.go:629] Removed old pending transaction: 
+	TX(dfc0ecc2716aaeb4fca890b913a877956de5a3b4642de24deab1f6e607ac0c56)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       c63da08c8a427916d4629a5c5b32c84c37feb275
+	Nonce:    4
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x15c281bd00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+	V:        0x1b
+	R:        0xf8fe9186c43bd8727cf8585fc7180eea6496b454adb86bbc52c8e03e6cdcdf0c
+	S:        0x46a5d5261bd65fdbb26b9502f98b6f0d83c8cad7930fba4d86acdb7bbff6e531
+	Hex:      f8a504808389544094c63da08c8a427916d4629a5c5b32c84c37feb27580b84415c281bd000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001ba0f8fe9186c43bd8727cf8585fc7180eea6496b454adb86bbc52c8e03e6cdcdf0ca046a5d5261bd65fdbb26b9502f98b6f0d83c8cad7930fba4d86acdb7bbff6e531
+I0523 09:22:52.931071 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:22:53.011995 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996076s)
+I0523 09:22:53.012529 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:22:53.012854 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:22:53.013458 p2p/server.go:616] Accepted conn 10.50.0.4:60132
+I0523 09:22:53.015826 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:22:53.016232 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:22:53.016626 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60132
+I0523 09:22:53.016041 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:22:53.017212 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:22:53.017409 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:22:53.017628 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:22:53.016987 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60132 failed checkpoint posthandshake: Connected to self
+I0523 09:22:53.018345 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:22:53.018564 p2p/server.go:447] new task: wait for dial hist expire (29.999995139s)
+I0523 09:23:12.933084 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:23:23.020088 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999995139s)
+I0523 09:23:23.020657 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:23:23.021072 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:23:23.021691 p2p/server.go:616] Accepted conn 10.50.0.4:60136
+I0523 09:23:23.024140 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:23:23.024390 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:23:23.024666 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60136
+I0523 09:23:23.024947 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60136 failed checkpoint posthandshake: Connected to self
+I0523 09:23:23.025640 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:23:23.026389 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:23:23.026792 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:23:23.027096 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:23:23.027480 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:23:23.027754 p2p/server.go:447] new task: wait for dial hist expire (29.999996202s)
+I0523 09:23:32.934793 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:23:52.937521 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:23:53.029511 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996202s)
+I0523 09:23:53.030183 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:23:53.030815 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:23:53.031394 p2p/server.go:616] Accepted conn 10.50.0.4:60140
+I0523 09:23:53.034195 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:23:53.034537 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:23:53.034794 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60140
+I0523 09:23:53.035081 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60140 failed checkpoint posthandshake: Connected to self
+I0523 09:23:53.034570 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:23:53.035732 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:23:53.035978 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:23:53.036297 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:23:53.036618 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:23:53.036937 p2p/server.go:447] new task: wait for dial hist expire (29.99999397s)
+I0523 09:24:09.066131 core/tx_pool.go:324] (t) 0xc2efa262 => c63da08c (0x917850) 442c9c1c68e78d33b074a75ac1c7e17e43c5063ad24999054f9789bd258e692e
+I0523 09:24:09.066555 core/tx_pool.go:507] Promoting queued transaction: 
+	TX(442c9c1c68e78d33b074a75ac1c7e17e43c5063ad24999054f9789bd258e692e)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       c63da08c8a427916d4629a5c5b32c84c37feb275
+	Nonce:    5
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x186dfe9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005
+	V:        0x1c
+	R:        0x6b4544ddcd431af9f10b0704356bfe3d8685d28105acc48317b81cfb3cc8e4f5
+	S:        0x6815c399ba3f75b9ea57fce81fc680b47d24c822f1fe7b1080632af68eb3a048
+	Hex:      f8a505808389544094c63da08c8a427916d4629a5c5b32c84c37feb27580b844186dfe90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051ca06b4544ddcd431af9f10b0704356bfe3d8685d28105acc48317b81cfb3cc8e4f5a06815c399ba3f75b9ea57fce81fc680b47d24c822f1fe7b1080632af68eb3a048
+I0523 09:24:09.066979 internal/ethapi/api.go:1198] Tx(0x442c9c1c68e78d33b074a75ac1c7e17e43c5063ad24999054f9789bd258e692e) to: 0xc63da08c8a427916d4629a5c5b32c84c37feb275
+I0523 09:24:09.067600 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-CREATED [0x442c9c1c68e78d33b074a75ac1c7e17e43c5063ad24999054f9789bd258e692e 0xc63da08c8a427916d4629a5c5b32c84c37feb275]
+I0523 09:24:09.067789 eth/handler.go:751] broadcast tx to 1 peers
+I0523 09:24:09.073605 internal/ethapi/api.go:1090] receipt not found for transaction 0x442c9c1c68e78d33b074a75ac1c7e17e43c5063ad24999054f9789bd258e692e
+I0523 09:24:09.078271 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-ACCEPTED [0x442c9c1c68e78d33b074a75ac1c7e17e43c5063ad24999054f9789bd258e692e]
+I0523 09:24:09.085325 core/vm/vm.go:120] running byte VM 39985ed7
+I0523 09:24:09.086093 core/vm/vm.go:123] byte VM 39985ed7 done. time: 341.377µs instrc: 224
+I0523 09:24:09.086449 core/state/state_object.go:235] 0000000000000000000000000000000000000000: #0 30000000000000000000 (+ 5000000000000000000)
+I0523 09:24:09.086843 core/state/statedb.go:577] Trie cache stats: 30 misses, 0 unloads
+I0523 09:24:09.087359 core/state/statedb.go:577] Trie cache stats: 30 misses, 0 unloads
+I0523 09:24:09.088049 core/database_util.go:424] stored block receipts [e6b58da7…]
+I0523 09:24:09.088494 core/database_util.go:388] stored block total difficulty [e6b58da7…]: 786432
+I0523 09:24:09.089022 core/database_util.go:374] stored block body [e6b58da7…]
+I0523 09:24:09.089710 core/database_util.go:360] stored header #6 [e6b58da7…]
+I0523 09:24:09.091129 core/blockchain.go:982] inserted block #6 [e6b58da7…] in  10.363ms:   1 txs   49090 gas 0 uncles.
+I0523 09:24:09.092688 core/blockchain.go:1069] imported 1 blocks,     1 txs (  0.049 Mg) in  11.928ms ( 4.115 Mg/s). #6 [e6b58da7…]
+I0523 09:24:09.092909 raft/handler.go:636] Successfully extended chain: e6b58da701fce4f8b88c7c5ea227e5b079e7a43d564a71fbbccf7462d309f3e8
+I0523 09:24:09.093193 raft/persistence.go:55] Persistent applied index write: 9
+I0523 09:24:09.093086 core/tx_pool.go:629] Removed old pending transaction: 
+	TX(442c9c1c68e78d33b074a75ac1c7e17e43c5063ad24999054f9789bd258e692e)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       c63da08c8a427916d4629a5c5b32c84c37feb275
+	Nonce:    5
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x186dfe9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005
+	V:        0x1c
+	R:        0x6b4544ddcd431af9f10b0704356bfe3d8685d28105acc48317b81cfb3cc8e4f5
+	S:        0x6815c399ba3f75b9ea57fce81fc680b47d24c822f1fe7b1080632af68eb3a048
+	Hex:      f8a505808389544094c63da08c8a427916d4629a5c5b32c84c37feb27580b844186dfe90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051ca06b4544ddcd431af9f10b0704356bfe3d8685d28105acc48317b81cfb3cc8e4f5a06815c399ba3f75b9ea57fce81fc680b47d24c822f1fe7b1080632af68eb3a048
+I0523 09:24:12.939023 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:24:23.039568 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.99999397s)
+I0523 09:24:23.040719 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:24:23.041023 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:24:23.041457 p2p/server.go:616] Accepted conn 10.50.0.4:60150
+I0523 09:24:23.043617 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:24:23.043938 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:24:23.044255 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60150
+I0523 09:24:23.044521 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60150 failed checkpoint posthandshake: Connected to self
+I0523 09:24:23.044815 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:24:23.045101 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:24:23.045304 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:24:23.045620 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:24:23.046082 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:24:23.046329 p2p/server.go:447] new task: wait for dial hist expire (29.999995251s)
+I0523 09:24:24.641017 core/tx_pool.go:324] (t) 0xc2efa262 => c63da08c (0x917850) 28b1243c7f88da2c0173c2ac9f3d197aa56a32e33af91d68776dbd3cc9105ab6
+I0523 09:24:24.641454 core/tx_pool.go:507] Promoting queued transaction: 
+	TX(28b1243c7f88da2c0173c2ac9f3d197aa56a32e33af91d68776dbd3cc9105ab6)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       c63da08c8a427916d4629a5c5b32c84c37feb275
+	Nonce:    6
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x661b115900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007
+	V:        0x1c
+	R:        0xe6d8737ebaa42eac6d443afd23c4845c8f0fb698427722745433ef5826cd42c2
+	S:        0x6629a4126461e992fe8fff1e532a8c58fc5c082da7208f3f359aa63b60a8046f
+	Hex:      f8a506808389544094c63da08c8a427916d4629a5c5b32c84c37feb27580b844661b1159000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000071ca0e6d8737ebaa42eac6d443afd23c4845c8f0fb698427722745433ef5826cd42c2a06629a4126461e992fe8fff1e532a8c58fc5c082da7208f3f359aa63b60a8046f
+I0523 09:24:24.642200 internal/ethapi/api.go:1198] Tx(0x28b1243c7f88da2c0173c2ac9f3d197aa56a32e33af91d68776dbd3cc9105ab6) to: 0xc63da08c8a427916d4629a5c5b32c84c37feb275
+I0523 09:24:24.642742 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-CREATED [0x28b1243c7f88da2c0173c2ac9f3d197aa56a32e33af91d68776dbd3cc9105ab6 0xc63da08c8a427916d4629a5c5b32c84c37feb275]
+I0523 09:24:24.642751 eth/handler.go:751] broadcast tx to 1 peers
+I0523 09:24:24.654919 internal/ethapi/api.go:1090] receipt not found for transaction 0x28b1243c7f88da2c0173c2ac9f3d197aa56a32e33af91d68776dbd3cc9105ab6
+I0523 09:24:24.659847 logger/log_raft_checkpoint.go:18] RAFT-CHECKPOINT TX-ACCEPTED [0x28b1243c7f88da2c0173c2ac9f3d197aa56a32e33af91d68776dbd3cc9105ab6]
+I0523 09:24:24.660392 core/vm/vm.go:120] running byte VM 39985ed7
+I0523 09:24:24.660780 core/vm/vm.go:123] byte VM 39985ed7 done. time: 197.458µs instrc: 229
+I0523 09:24:24.661094 core/state/state_object.go:235] 0000000000000000000000000000000000000000: #0 35000000000000000000 (+ 5000000000000000000)
+I0523 09:24:24.661499 core/state/statedb.go:577] Trie cache stats: 35 misses, 2 unloads
+I0523 09:24:24.662276 core/state/statedb.go:577] Trie cache stats: 35 misses, 2 unloads
+I0523 09:24:24.662969 core/database_util.go:424] stored block receipts [284edd7a…]
+I0523 09:24:24.663419 core/database_util.go:388] stored block total difficulty [284edd7a…]: 917504
+I0523 09:24:24.663934 core/database_util.go:374] stored block body [284edd7a…]
+I0523 09:24:24.665110 core/database_util.go:360] stored header #7 [284edd7a…]
+I0523 09:24:24.666491 core/blockchain.go:982] inserted block #7 [284edd7a…] in   6.418ms:   1 txs   49112 gas 0 uncles.
+I0523 09:24:24.668625 core/blockchain.go:1069] imported 1 blocks,     1 txs (  0.049 Mg) in   8.509ms ( 5.772 Mg/s). #7 [284edd7a…]
+I0523 09:24:24.669431 raft/handler.go:636] Successfully extended chain: 284edd7abfd65f9c70a685040f3dcbec367d3d7b76ff0d11411b83d2f8359808
+I0523 09:24:24.670184 raft/persistence.go:55] Persistent applied index write: 10
+I0523 09:24:24.669849 core/tx_pool.go:629] Removed old pending transaction: 
+	TX(28b1243c7f88da2c0173c2ac9f3d197aa56a32e33af91d68776dbd3cc9105ab6)
+	Contract: false
+	From:     c2efa262856d571ca06788586277863bd167cb4a
+	To:       c63da08c8a427916d4629a5c5b32c84c37feb275
+	Nonce:    6
+	GasPrice: 0
+	GasLimit  9000000
+	Value:    0
+	Data:     0x661b115900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007
+	V:        0x1c
+	R:        0xe6d8737ebaa42eac6d443afd23c4845c8f0fb698427722745433ef5826cd42c2
+	S:        0x6629a4126461e992fe8fff1e532a8c58fc5c082da7208f3f359aa63b60a8046f
+	Hex:      f8a506808389544094c63da08c8a427916d4629a5c5b32c84c37feb27580b844661b1159000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000071ca0e6d8737ebaa42eac6d443afd23c4845c8f0fb698427722745433ef5826cd42c2a06629a4126461e992fe8fff1e532a8c58fc5c082da7208f3f359aa63b60a8046f
+I0523 09:24:32.940318 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:24:52.943748 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:24:53.047210 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999995251s)
+I0523 09:24:53.048082 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:24:53.048502 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:24:53.048986 p2p/server.go:616] Accepted conn 10.50.0.4:60160
+I0523 09:24:53.051159 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:24:53.051435 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:24:53.051701 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60160
+I0523 09:24:53.051984 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60160 failed checkpoint posthandshake: Connected to self
+I0523 09:24:53.052235 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:24:53.052895 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:24:53.053191 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:24:53.053498 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:24:53.053879 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:24:53.054117 p2p/server.go:447] new task: wait for dial hist expire (29.999996496s)
+I0523 09:24:59.731625 core/vm/vm.go:120] running byte VM 39985ed7
+I0523 09:24:59.732370 core/vm/vm.go:123] byte VM 39985ed7 done. time: 164.283µs instrc: 120
+I0523 09:24:59.732808 internal/ethapi/api.go:664] call took 1.392371ms
+I0523 09:25:12.946283 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:25:23.055738 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996496s)
+I0523 09:25:23.057935 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:25:23.058313 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:25:23.058870 p2p/server.go:616] Accepted conn 10.50.0.4:60170
+I0523 09:25:23.061432 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:25:23.061782 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:25:23.062016 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60170
+I0523 09:25:23.062232 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60170 failed checkpoint posthandshake: Connected to self
+I0523 09:25:23.062626 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:25:23.062855 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:25:23.063151 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:25:23.063393 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:25:23.063697 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:25:23.063909 p2p/server.go:447] new task: wait for dial hist expire (29.999996614s)
+I0523 09:25:32.948600 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:25:52.951564 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:25:53.065741 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996614s)
+I0523 09:25:53.066733 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:25:53.067170 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:25:53.067655 p2p/server.go:616] Accepted conn 10.50.0.4:60178
+I0523 09:25:53.069976 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:25:53.070257 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:25:53.070487 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60178
+I0523 09:25:53.070719 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60178 failed checkpoint posthandshake: Connected to self
+I0523 09:25:53.071054 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:25:53.071297 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:25:53.071539 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:25:53.071815 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:25:53.072185 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:25:53.072388 p2p/server.go:447] new task: wait for dial hist expire (29.99999602s)
+I0523 09:26:12.955018 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:26:23.073622 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.99999602s)
+I0523 09:26:23.074168 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:26:23.074500 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:26:23.075003 p2p/server.go:616] Accepted conn 10.50.0.4:60184
+I0523 09:26:23.077237 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:26:23.077495 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:26:23.077728 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60184
+I0523 09:26:23.077987 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60184 failed checkpoint posthandshake: Connected to self
+I0523 09:26:23.078358 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:26:23.078608 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:26:23.078980 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:26:23.079265 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:26:23.079714 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:26:23.079980 p2p/server.go:447] new task: wait for dial hist expire (29.999996312s)
+I0523 09:26:32.959128 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:26:52.960381 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:26:53.080643 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999996312s)
+I0523 09:26:53.081703 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:26:53.082400 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:26:53.083376 p2p/server.go:616] Accepted conn 10.50.0.4:60188
+I0523 09:26:53.087666 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:26:53.088194 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:26:53.088690 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60188
+I0523 09:26:53.089224 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60188 failed checkpoint posthandshake: Connected to self
+I0523 09:26:53.089752 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:26:53.090188 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:26:53.090667 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:26:53.091220 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:26:53.091890 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:26:53.092382 p2p/server.go:447] new task: wait for dial hist expire (29.999994308s)
+I0523 09:27:12.962327 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:27:23.093319 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999994308s)
+I0523 09:27:23.094265 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:27:23.094953 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:27:23.095826 p2p/server.go:616] Accepted conn 10.50.0.4:60192
+I0523 09:27:23.100565 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:27:23.101130 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:27:23.101658 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60192
+I0523 09:27:23.102178 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60192 failed checkpoint posthandshake: Connected to self
+I0523 09:27:23.102712 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:27:23.103196 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:27:23.106655 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:27:23.107176 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:27:23.107831 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:27:23.108269 p2p/server.go:447] new task: wait for dial hist expire (29.999993148s)
+I0523 09:27:32.963823 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:27:52.965696 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:27:53.109989 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999993148s)
+I0523 09:27:53.110704 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:27:53.111334 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:27:53.112405 p2p/server.go:616] Accepted conn 10.50.0.4:60196
+I0523 09:27:53.117096 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:27:53.117710 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:27:53.118377 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60196
+I0523 09:27:53.119388 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60196 failed checkpoint posthandshake: Connected to self
+I0523 09:27:53.120004 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:27:53.120851 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:27:53.121472 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:27:53.122099 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:27:53.122785 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:27:53.123316 p2p/server.go:447] new task: wait for dial hist expire (29.999992917s)
+I0523 09:28:12.969581 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:28:23.124836 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999992917s)
+I0523 09:28:23.127494 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:28:23.128122 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:28:23.129232 p2p/server.go:616] Accepted conn 10.50.0.4:60200
+I0523 09:28:23.136199 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:28:23.136946 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:28:23.136421 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:28:23.137962 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:28:23.137522 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:28:23.140345 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60200
+I0523 09:28:23.140361 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:28:23.141000 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60200 failed checkpoint posthandshake: Connected to self
+I0523 09:28:23.141775 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:28:23.142355 p2p/server.go:447] new task: wait for dial hist expire (29.999980475s)
+I0523 09:28:32.974587 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:28:52.976335 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:28:53.143367 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999980475s)
+I0523 09:28:53.144404 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:28:53.144976 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:28:53.145885 p2p/server.go:616] Accepted conn 10.50.0.4:60204
+I0523 09:28:53.151817 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:28:53.152430 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:28:53.152813 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60204
+I0523 09:28:53.153197 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60204 failed checkpoint posthandshake: Connected to self
+I0523 09:28:53.152239 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:28:53.154042 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:28:53.154457 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:28:53.154896 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:28:53.155336 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:28:53.155647 p2p/server.go:447] new task: wait for dial hist expire (29.999995902s)
+I0523 09:29:12.978717 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:29:23.156518 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999995902s)
+I0523 09:29:23.158869 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:29:23.159594 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:29:23.160706 p2p/server.go:616] Accepted conn 10.50.0.4:60208
+I0523 09:29:23.166434 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:29:23.166937 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:29:23.167038 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:29:23.168104 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:29:23.167409 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60208
+I0523 09:29:23.169212 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:29:23.169615 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60208 failed checkpoint posthandshake: Connected to self
+I0523 09:29:23.169797 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:29:23.171137 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:29:23.171575 p2p/server.go:447] new task: wait for dial hist expire (29.99999262s)
+I0523 09:29:32.983840 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:29:52.986458 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:29:53.173105 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.99999262s)
+I0523 09:29:53.174032 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:29:53.174865 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:29:53.176181 p2p/server.go:616] Accepted conn 10.50.0.4:60214
+I0523 09:29:53.184704 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:29:53.185412 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:29:53.186111 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60214
+I0523 09:29:53.187026 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60214 failed checkpoint posthandshake: Connected to self
+I0523 09:29:53.187989 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:29:53.188507 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:29:53.189190 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:29:53.190247 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:29:53.191114 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:29:53.191658 p2p/server.go:447] new task: wait for dial hist expire (29.99999122s)
+I0523 09:30:12.990103 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:30:23.193668 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.99999122s)
+I0523 09:30:23.194817 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:30:23.196339 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:30:23.197562 p2p/server.go:616] Accepted conn 10.50.0.4:60220
+I0523 09:30:23.202590 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:30:23.203266 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:30:23.203983 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60220
+I0523 09:30:23.204800 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60220 failed checkpoint posthandshake: Connected to self
+I0523 09:30:23.205246 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:30:23.206427 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:30:23.207065 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:30:23.207688 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:30:23.208529 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:30:23.209131 p2p/server.go:447] new task: wait for dial hist expire (29.999992694s)
+I0523 09:30:32.996322 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:30:52.998207 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:30:53.212006 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999992694s)
+I0523 09:30:53.212863 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:30:53.213499 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:30:53.214542 p2p/server.go:616] Accepted conn 10.50.0.4:60224
+I0523 09:30:53.219247 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:30:53.219770 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:30:53.220155 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60224
+I0523 09:30:53.220542 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60224 failed checkpoint posthandshake: Connected to self
+I0523 09:30:53.221009 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:30:53.221443 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:30:53.221902 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:30:53.222263 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:30:53.225080 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:30:53.225336 p2p/server.go:447] new task: wait for dial hist expire (29.999995624s)
+I0523 09:31:13.000663 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:31:23.226329 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999995624s)
+I0523 09:31:23.226751 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:31:23.227329 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:31:23.227938 p2p/server.go:616] Accepted conn 10.50.0.4:60228
+I0523 09:31:23.230131 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:31:23.230437 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:31:23.230667 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60228
+I0523 09:31:23.230992 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60228 failed checkpoint posthandshake: Connected to self
+I0523 09:31:23.231437 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:31:23.231643 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:31:23.231845 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:31:23.232008 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:31:23.232346 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:31:23.232525 p2p/server.go:447] new task: wait for dial hist expire (29.999997074s)
+I0523 09:31:33.005279 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:31:52.912256 p2p/nat/nat.go:120] refresh port mapping tcp:21000 -> 21000 (ethereum p2p) using UPnP or NAT-PMP
+I0523 09:31:52.913266 p2p/nat/nat.go:122] network port tcp:21000 could not be mapped: no UPnP or NAT-PMP router discovered
+I0523 09:31:53.008309 eth/downloader/downloader.go:1450] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+I0523 09:31:53.233278 p2p/server.go:495] <-taskdone: wait for dial hist expire (29.999997074s)
+I0523 09:31:53.233609 p2p/server.go:447] new task: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:31:53.233849 p2p/dial.go:268] dial tcp 10.50.0.4:21000 (eef12d10db96)
+I0523 09:31:53.234234 p2p/server.go:616] Accepted conn 10.50.0.4:60232
+I0523 09:31:53.236405 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<<nil>>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:31:53.236754 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:31:53.237023 p2p/server.go:505] <-posthandshake: inbound conn eef12d10db96e118 10.50.0.4:60232
+I0523 09:31:53.237297 p2p/server.go:678] inbound conn eef12d10db96e118 10.50.0.4:60232 failed checkpoint posthandshake: Connected to self
+I0523 09:31:53.237784 p2p/server.go:650] EnableNodePermission <false>, DataDir </node1/qdata>, Current Node ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Node Name <Geth/v1.5.0-unstable-ddb011f3/linux/go1.8>, Dialed Dest<enode://eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832@10.50.0.4:21000?discport=0>, Connection ID <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832>, Connection String <eef12d10db96e118d8556364bb2aad8e9ac19791f77df8197c02a1d688015a6ea38363eff3bbcb6645770aaa1318264a218d83972df4bc03780cd821c10fe832> 
+I0523 09:31:53.238028 p2p/server.go:666] Node Permissioning is Disabled. 
+I0523 09:31:53.238246 p2p/server.go:505] <-posthandshake: static dial conn eef12d10db96e118 10.50.0.4:21000
+I0523 09:31:53.238469 p2p/server.go:678] static dial conn eef12d10db96e118 10.50.0.4:21000 failed checkpoint posthandshake: Connected to self
+I0523 09:31:53.238820 p2p/server.go:495] <-taskdone: static dial eef12d10db96e118 10.50.0.4:21000
+I0523 09:31:53.239017 p2p/server.go:447] new task: wait for dial hist expire (29.999984801s)

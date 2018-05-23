@@ -1,0 +1,44 @@
+version: '2'
+
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.50.0.0/16
+          gateway: 10.50.0.1
+services:
+  node1:
+    container_name: node1
+    image: syneblock/quorum
+    environment:
+      - CORE_node1_NETWORKID=node1
+      - CORE_NODE_IP=node1
+      - CORE_MASTERNODE_IP=node1 
+    working_dir: /node1
+    command: ["bash" , "start_node.sh"]
+    volumes:
+      - ./node1:/node1
+    ports:
+      - 22000:22000
+    networks:
+      vpcbr:
+        ipv4_address: 10.50.0.4
+
+  node2:
+    container_name: node2
+    image: syneblock/quorum
+    environment:
+      - CORE_node2_NETWORKID=node2
+      - CORE_NODE_IP=node2
+      - CORE_MASTERNODE_IP=node1 
+    working_dir: /node2
+    command: ["bash" , "start_node.sh"]
+    volumes:
+      - ./node2:/node2
+    ports:
+      - 22001:22000
+    networks:
+      vpcbr:
+        ipv4_address: 10.50.0.5
+
